@@ -33,7 +33,7 @@ app.post('/send-mail', async (req, res) => {
         from: email,
         to: process.env.RECIPIENT_EMAIL || 'recipient-email@gmail.com', // Email to receive messages
         subject: `Message from ${name}`,
-        text: message,
+        text: `from: ${email}` +message,
     };
 
     try {
