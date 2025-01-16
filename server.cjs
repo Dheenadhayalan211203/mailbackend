@@ -40,7 +40,7 @@ app.post('/send-mail', async (req, res) => {
         from: process.env.RECIPIENT_EMAIL,
         to:  email,
         subject: `Message Recived `,
-        text: `Hi ${name} , Thank you for reaching out to us. Your message has been received, and our team will get in touch with you shortly. \n\n Best regards , \n Team Tacosoft `,
+        text: `Hi ${name} , Thank you for reaching out to us. Your message has been received, and our team will get in touch with you shortly. \n\n Best regards , \n Team taxaccsoft `,
     };
 
     try {
